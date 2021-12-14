@@ -1,0 +1,7 @@
+*db
+*swp
+*pyc
+__pycache__
+config_db.py
+venv
+

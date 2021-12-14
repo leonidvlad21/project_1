@@ -1,0 +1,26 @@
+<!doctype html>
+
+{% extends 'exam_base.html' %}
+<title>Flask Login</title>
+
+{% block header %}
+    <h2> style="text-align:right;">
+        <a href="{{ url_for('indexblog') }}" style="color:blue">Sign in</a>
+   </h2>
+{% endblock %}
+
+{% block content %}
+    <h1>{% block title %} Enter your login and password {% endblock %}
+        <!-- <a href="{{ url_for('indexblog') }}" style="text-align:right; color:blue">Register</a> -->
+    </h1>
+  <form method="post">
+    <label for="login">Login</label>
+    <input name="login" id="login" required>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" required>
+    <p>
+    <input type="submit" value="Sign in">
+     <a href="{{ url_for('do_register') }}" style="text-align:right; color:blue">Register</a>
+    </p>
+  </form>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>{% block title %} {{ the_post['title'] }} {% endblock %}</h2>
+    <span class="badge badge-primary">{{ the_post['ts'] }}</span>
+    <p>{{ the_post['content'] }}</p>
+{% endblock %}

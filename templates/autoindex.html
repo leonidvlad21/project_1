@@ -1,0 +1,38 @@
+{% extends '__autoindex__/autoindex.html' %}
+
+{% block meta %}
+  {{ super() }}
+  <link rel="stylesheet"
+    href="{{ url_for('static', filename='autoindex.css') }}" />
+{% endblock %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+{% endblock %}
+
+{% block header %}
+  <div style="width: 500px; margin: 30px auto;">
+    <h2 style="text-align:right;">
+        <a href="{{ url_for('indexblog') }}" style="color:blue">Blogs</a>
+    </h2>
+    <h2 style="text-align:right;">
+        <a href="{{ url_for('do_logout') }}" style="color:blue">Logout</a>
+    </h2>
+    <h1>
+	Welcome to Flask AutoIndex
+    </h1>
+    <hr>
+    <h2>Files to download</h2>
+{% endblock %}
+
+{% block footer %}
+  </div>
+{% endblock %}
+
+<!-- insert 1 -->
+
+
+
+ 
