@@ -6,7 +6,11 @@ Create virtual environment and install python libraries
 ------------------------------------------------------------------------
 ```
 python3.9 -m venv venv
+on Linux:
 source venv/bin/activate
+on Windows:
+venv/scripts/activate
+
 pip install -r requirements.txt
 ```
 
